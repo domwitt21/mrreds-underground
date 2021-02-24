@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anton&family=Bebas+Neue&family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Gloria+Hallelujah&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*          GLOBALS          */
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    background-color: black;
+}
+/*-----------------------------------------------------------------*/
+
+.contentsContainer {
+    z-index: -1;
+}
+.bodyContents {
+    z-index: -1;
+}
+.bodyContents h1 {
+    color: white;
+    font-family: 'Amatic SC';
+    font-size: 45px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    animation: slideIn 2s;
+}
+.bodyLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    z-index: -1;
+    animation: slideIn 2s;
+}
+.redTxt {
+    color: red;
+}
+h1.mainBdyTxt {
+    font-size: 105px;
+    font-weight: 900;
+}
+.navContainer {
+    z-index: 1;
+    margin-top: -3%;
+}
+.navContents {
+    text-align: center;
+}
+.navContents button {
+    font-family: 'Amatic SC';
+    font-size: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: 700;
+    background-color: red;
+    text-rendering: optimizeLegibility;
+    border: 2px solid rgb(163, 0, 0);
+    border-style: double;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: all .25s ease-in-out;
+    outline: none;
+    animation: slideDown 2s;
+}
+.navContents button:hover {
+    transform: scale(1.2) skewY(2deg) rotateY(5deg);
+    cursor: pointer;
+}
+.btnTxt {
+    color: black;
+}
+
+/*       ---          ANIMATIONS         ---        */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(359deg);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes growIn {
+    0% {
+        transform: scale(.3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/*----------------------------------------------------------------------------*/
